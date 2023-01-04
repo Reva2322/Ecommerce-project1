@@ -1,0 +1,40 @@
+{% extends 'REV/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'REV/images/banner/b1.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'REV/images/banner/b2.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'REV/images/banner/b3.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+      <div class="carousel-item">
+      <img src="{% static 'REV/images/banner/b4.jpg'%}" class="d-block w-100" alt="banner image">
+    </div>
+  </div>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-conter">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">This is a public limited company having its registered and corporate office at Coimbatore city of Tamil Nadu state in India.</p>
+    </div>
+    <br><br>
+    <h2 class="text-conter">Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">To embrace the right technology to delight our customers.</p>
+    </div>
+</div>    
+<br><br>
+{% endblock main-content %}
